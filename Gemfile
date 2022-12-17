@@ -83,3 +83,5 @@ gem "bullet", "~> 7.0", :groups => [:development, :test]
 
 gem "simplecov-rcov", "~> 0.3.1", :group => :test
 gem "launchy", "~> 2.5", :group => :test
+
+gem "hot-glue", "~> 0.5.4"
