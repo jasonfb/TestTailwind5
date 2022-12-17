@@ -1,0 +1,36 @@
+<%= turbo_frame_tag "__authors-list"   do %>
+  <div class=" overflow-x-auto w-full">
+    
+      <h4>
+        AUTHORS
+      </h4>
+    
+
+    <%= render partial: "authors/new_button", locals: {} %><br />
+
+    
+      
+        <div class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700 grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-t border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+          <div class=''>Name</div>
+          
+
+          <div class=' scaffold-col-heading scaffold-col-heading-buttons ' >
+          </div>
+        </div>
+      
+
+      <% if authors.empty? %>
+    <div>
+        None
+    </div>
+      <% end %>
+      <% authors.each do |author| %>
+        <%= render partial: 'authors/line', locals: {author: author}
+            .merge(defined?(nested_for) ? {nested_for: nested_for} : {})
+      
+        %>
+      <% end %>
+    <% if authors.respond_to?(:total_pages) %><%= paginate(authors) %> <% end %>
+  
+  </div>
+<% end %>

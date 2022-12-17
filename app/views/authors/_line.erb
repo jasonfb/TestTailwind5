@@ -1,0 +1,10 @@
+<%= turbo_frame_tag "__#{ dom_id(author) }" do  %>
+  <div class='grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700' data-id='<%= author.id %>' data-edit='false'>
+    <%= render partial: 'authors/show', locals: { author: author } %>
+
+  </div>
+<% end %>
+
+
+
+
