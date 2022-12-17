@@ -1,3 +1,11 @@
+PATH
+  remote: /Users/jason/Work/Hot_Glue/hot-glue-private
+  specs:
+    hot-glue (0.5.4)
+      ffaker (~> 2.16)
+      kaminari (~> 1.2)
+      rails (> 5.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -103,10 +111,6 @@ GEM
     ffaker (2.21.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    hot-glue (0.5.4)
-      ffaker (~> 2.16)
-      kaminari (~> 1.2)
-      rails (> 5.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -280,7 +284,7 @@ DEPENDENCIES
   debug
   factory_bot_rails (~> 6.2)
   ffaker (~> 2.21)
-  hot-glue (~> 0.5.4)
+  hot-glue (~> 0.5.4)!
   jbuilder
   jsbundling-rails
   launchy (~> 2.5)
