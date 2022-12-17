@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/jason/Work/Hot_Glue/hot-glue-private
+GIT
+  remote: https://github.com/jasonfb/hot-glue.git
+  revision: 75f10cc6cb31ead60b9c5db2c6a0270bc23d0e6f
+  branch: jfb/2022-12-03-tailwind2
   specs:
     hot-glue (0.5.4)
       ffaker (~> 2.16)
